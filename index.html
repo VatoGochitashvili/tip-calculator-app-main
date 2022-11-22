@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip Calculator</title>
+  </head>
+  <body>
+    <img
+      class="image"
+      src="/tip-calculator-app-main/images/logo.svg"
+      alt="logo"
+    />
+    <div class="container">
+      <div class="inputs">
+        <p>Bill</p>
+        <input
+          class="bill"
+          type="number"
+          required
+          max="99999"
+          placeholder="0"
+        />
+        <div class="precent">
+          <p>Select Tip %</p>
+          <div class="flex">
+            <button class="tip prc active">5%</button>
+            <button class="tip prc">10%</button>
+            <button class="tip prc">15%</button>
+            <button class="tip prc">25%</button>
+            <button class="tip prc">50%</button>
+            <input
+              class="tip custom"
+              placeholder="Custom"
+              type="number"
+              max="9999"
+            />
+          </div>
+        </div>
+        <div
+          class="peopleText"
+          style="display: flex; justify-content: space-between"
+        >
+          <p>Number of People</p>
+          <p class="zero hidden" style="color: var(--error-color)">
+            Can't be zero
+          </p>
+        </div>
+        <input class="person" type="number" placeholder="0" />
+      </div>
+      <div class="calcTip">
+        <div class="tipAmount">
+          <div class="texts">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <h2 class="number">$4.27</h2>
+        </div>
+        <div class="totalAmount">
+          <div class="texts">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <h2 class="number">$32.79</h2>
+        </div>
+        <button class="reset inactive" type="submit">reset</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
